@@ -73,3 +73,21 @@ enterBtn.addEventListener("click", () => {
     if (errorOccured === true) {
         return;
     }
+    if (firstNumber !== null && operator !== null && currentNumber !== "") {
+
+        if (operator === "/" && Number(currentNumber) === 0) {
+            errorOccured = true;
+            document.getElementById("screen").innerText = "Cannot divide by zero";
+            return;
+        }
+
+        firstNumber = operations[operator](firstNumber, Number(currentNumber));
+
+        operator = null;
+        currentNumber = "";
+        justComputed = true;
+
+        document.getElementById("screen").innerText = formatNumber(firstNumber);
+
+    }
+});
