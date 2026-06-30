@@ -10,3 +10,5 @@ operations = {
     "*": (a, b) => a * b,
     "/": (a, b) => a / b
 };
+
+document.getElementById("screen").innerText = 0;
