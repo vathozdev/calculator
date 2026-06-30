@@ -21,3 +21,15 @@ const operatorBtns = document.querySelector('.operators');
 
 operatorBtns.addEventListener("click", (event) => {
     const op = event.target.textContent;
+
+    if (errorOccured === true) {
+        return;
+    }
+
+    if (firstNumber !== null && operator !== null && currentNumber !== "") {
+
+        if (operator === "/" && Number(currentNumber) === 0) {
+            errorOccured = true;
+            document.getElementById("screen").innerText = "Cannot divide by zero";
+            return;
+        }
