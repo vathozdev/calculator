@@ -25,3 +25,10 @@
     overflow: hidden;
     white-space: nowrap;
 }
+
+#device-body {
+  display: flex;
+  gap: 20px;
+  background: linear-gradient(180deg, #9b9494, #7f7777); 
+  
+}
