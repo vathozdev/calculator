@@ -56,3 +56,13 @@ numberBtns.addEventListener("click", (event) => {
     if (errorOccured === true) {
         return;
     }
+        if (justComputed === true) {
+        currentNumber = event.target.textContent;
+        document.getElementById("screen").innerText = currentNumber;
+        justComputed = false;
+
+    } else {
+        currentNumber += event.target.textContent;
+        document.getElementById("screen").innerText = currentNumber;
+    }
+});
