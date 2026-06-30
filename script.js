@@ -48,3 +48,11 @@ operatorBtns.addEventListener("click", (event) => {
     justComputed = true;
     currentNumber = "";
 });
+
+const numberBtns = document.querySelector(".wrapper");
+
+numberBtns.addEventListener("click", (event) => {
+
+    if (errorOccured === true) {
+        return;
+    }
