@@ -66,3 +66,10 @@ numberBtns.addEventListener("click", (event) => {
         document.getElementById("screen").innerText = currentNumber;
     }
 });
+const enterBtn = document.querySelector(".enter-delete #enter");
+
+enterBtn.addEventListener("click", () => {
+
+    if (errorOccured === true) {
+        return;
+    }
