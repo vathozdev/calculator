@@ -12,3 +12,8 @@ operations = {
 };
 
 document.getElementById("screen").innerText = 0;
+
+function formatNumber(num) {
+    if (typeof num !== "number") return num;
+    return num.toFixed(4).replace(/\.?0+$/, "");
+}
