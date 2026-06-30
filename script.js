@@ -17,7 +17,7 @@ function formatNumber(num) {
     if (typeof num !== "number") return num;
     return num.toFixed(4).replace(/\.?0+$/, "");
 }
-onst operatorBtns = document.querySelector('.operators');
+const operatorBtns = document.querySelector('.operators');
 
 operatorBtns.addEventListener("click", (event) => {
     const op = event.target.textContent;
