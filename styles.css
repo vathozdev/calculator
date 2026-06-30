@@ -60,3 +60,8 @@
   transform: translateY(3px);
   box-shadow: 0 1px 0 #222;
 }
+.operators {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
