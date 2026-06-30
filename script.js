@@ -91,3 +91,14 @@ enterBtn.addEventListener("click", () => {
 
     }
 });
+
+const clearBtn = document.querySelector(".enter-delete #clear");
+
+clearBtn.addEventListener("click", () => {
+    errorOccured = false;
+    currentNumber = "";
+    firstNumber = null;
+    operator = null;
+    justComputed = true;
+    document.getElementById("screen").innerText = 0;
+});
