@@ -49,5 +49,8 @@
 
   font-size: 28px;
   font-weight: bold;
+  background: linear-gradient(180deg, #f2f2f2, #cfcfcf);
 
+  border: 3px solid #333;
+  border-radius: 8px;
 }
