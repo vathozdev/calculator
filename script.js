@@ -32,4 +32,19 @@ operatorBtns.addEventListener("click", (event) => {
             errorOccured = true;
             document.getElementById("screen").innerText = "Cannot divide by zero";
             return;
-        }
+}
+
+        firstNumber = operations[operator](firstNumber, Number(currentNumber));
+        document.getElementById("screen").innerText = formatNumber(firstNumber);
+
+    } else if (firstNumber === null && currentNumber !== "") {
+
+        firstNumber = Number(currentNumber);
+        document.getElementById("screen").innerText = formatNumber(firstNumber);
+
+    }
+
+    operator = op;
+    justComputed = true;
+    currentNumber = "";
+});
