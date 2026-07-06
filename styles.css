@@ -120,33 +120,34 @@ body {
     box-shadow: 0 1px 0 #222;
 }
 
+
 @media (max-width: 768px) {
 
     #container {
-        margin: 10px;
+        max-width: 700px;
+        margin: 15px;
     }
 
     #screen {
-        height: 120px;
-        font-size: 32px;
+        height: 140px;
+        font-size: 36px;
         padding: 15px;
     }
 
     #device-body {
-        gap: 10px;
-        padding: 15px;
+        gap: 12px;
+        padding: 15px 10px;
     }
 
     .wrapper {
-        width: 100%;
-        max-width: 300px;
+        width: 315px;
         gap: 10px;
     }
 
     .wrapper button,
     .operators button {
-        width: 90px;
-        height: 90px;
+        width: 95px;
+        height: 95px;
         font-size: 22px;
     }
 
@@ -159,18 +160,33 @@ body {
     }
 
     .enter-delete button {
-        width: 90px;
-        height: 190px;
-        font-size: 22px;
+        width: 95px;
+        height: 200px;
+        font-size: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
 
 @media (max-width: 480px) {
 
+    body {
+        padding: 10px;
+    }
+
+    #container {
+        max-width: 100%;
+        margin: 0;
+    }
+
     #screen {
         height: 90px;
         font-size: 24px;
         padding: 10px;
+        letter-spacing: 1px;
     }
 
     #device-body {
@@ -179,28 +195,38 @@ body {
     }
 
     .wrapper {
-        max-width: 210px;
-        gap: 8px;
+        width: 210px;
+        gap: 6px;
     }
 
     .wrapper button,
     .operators button {
-        width: 64px;
-        height: 64px;
+        width: 66px;
+        height: 66px;
         font-size: 18px;
     }
 
     .operators {
-        gap: 8px;
+        gap: 6px;
     }
 
     .enter-delete {
-        gap: 8px;
+        gap: 6px;
     }
 
     .enter-delete button {
-        width: 64px;
-        height: 136px;
-        font-size: 18px;
+        width: 66px;
+        height: 138px;
+
+        font-size: 13px;
+        line-height: 1.1;
+        padding: 4px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        word-break: break-word;
     }
 }
